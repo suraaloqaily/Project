@@ -42,4 +42,7 @@ return initial+parseInt(element)
 },0)
 alert ("Your result is :" + result )
 
+
 }
+
+
