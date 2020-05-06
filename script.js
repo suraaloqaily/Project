@@ -25,16 +25,21 @@ function reduce(array, f, acc) {
  return acc; 
 }
 
-var $q1=$("#q1").value
-console.log($q1)
-var $q2=$("#q2").value
-var $q3=$("#q3").value
-var $q4=$("#q4").value
-var $q5=$("#q5").value
-var arrayValues=[$q1,$q2,$q3,$q4,$q5]
-function myFunction(arrayValues){
-  var result= reduce(arrayValues,function(start,value){
-return start+value
-  },0)
-  alert("Your score is : " + result)
+
+ 
+function returnResult(queryString){
+  var queryString = $('#myform').serialize();
+
+var a=queryString.split("&")
+var arr2=[]
+
+ var marks= each(a,function(element){
+var arr=(element.split("="))
+arr2.push(arr[1])
+})
+var result =   reduce(arr2,function(initial,element){
+return initial+parseInt(element)
+},0)
+alert ("Your result is :" + result )
+
 }
