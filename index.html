@@ -1,109 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>quiz</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-<div class="row">
-<div class="col-12">
-<h1>Quiz</h1>
-</div>
-</div>
-
- <p>Test your self!</p>
-<div>
-<form>
- Choose Your Name:
-  <select id="mySelect">
-    <option value="">None</option>
-    <option value="sura">sura</option>
-    <option value="orieb">orieb</option>
-   
-  </select>
-</form>
-<form action="pink-twitter-icon-clipart-1.png" id="myform" onsubmit="returnResult()">
-        <h2 id="q1">What is the capital city of Canada?</h2>
-
-  <input type="radio" id="choose11" value=0 name="option1">
-
-  <label for="choose11"> A. Montreal </label><br>
-
-  <input type="radio" id="choose12" value=1 name="option1" >
-
-  <label for="choose12">B.  Ottawa </label><br>
-
-  <input type="radio" id="choose13" value=0 name="option1">
-
-  <label for="choose13">C.  Toronto </label><br>
-<input type="radio" id="choose14" value=0 name="option1">
-  <label for="choose14">D.  Vancouver </label><br><br>
-
-  <h2 id="q2">The Only Male Animals in the World that Get Pregnant and Give Birth
-?</h2>
-
-  <input type="radio" id="choose21" value=1 name="option2">
-  <label for="choose21"> A. seahorses </label><br>
-  <input type="radio" id="choose22" value=0 name="option2" >
-  <label for="choose22"> B. Whale </label><br>
-  <input type="radio" id="choose23" value=0 name="option2">
-  <label for="choose23"> C. Flamingo </label><br>
-<input type="radio" id="choose24" value=0 name="option2">
-  <label for="choose24"> D. Dolphin </label><br><br>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
-<h2 id="q3">Which planet has its red color ?</h2>
+<style>
 
-  <input type="radio" id="choose31" value=1 name="option3">
-  <label for="choose31"> A. Mars</label><br>
-  <input type="radio" id="choose32" value=0 name="option3" >
-  <label for="choose32"> B. Saturn </label><br>
-  <input type="radio" id="choose33" value=0 name="option3">
-  <label for="choose33"> C. Mercury </label><br>
-  <input type="radio" id="choose34" value=0 name="option3">
-  <label for="choose34"> D. Uranus </label><br><br>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-
-<h2 id="q4">Who Invented the Aeroplane?</h2>
-
-  <input type="radio" id="choose41" value=0 name="option4">
-  <label for="choose41">A. Orville Wright </label><br>
-  <input type="radio" id="choose42" value=0 name="option4" >
-  <label for="choose42"> B. Wilbur Wright </label><br>
-  <input type="radio" id="choose43" value=0 name="option4">
-  <label for="choose43"> C. Richard Trevithick </label><br>
-<input type="radio" id="choose44" value=1 name="option4">
-  <label for="choose44"> D. A + B </label><br><br>
+* {
+  box-sizing: border-box;
+}
 
 
-<h2 id="q5">What is the heart of Holy Quran?</h2>
-
-  <input type="radio" id="choose51" value=1 name="option5">
-  <label for="choose51"> A. Yaseen</label><br>
-  <input type="radio" id="choose52" value=0 name="option5" >
-  <label for="choose52"> B. Al-Fatiha </label><br>
-  <input type="radio" id="choose53" value=0 name="option5">
-  <label for="choose53"> C. Al-kahef </label><br>
-  <input type="radio" id="choose54" value=0 name="option5">
-  <label for="choose54"> D. Al-Rahman </label><br><br>
+.bg-image {
+  /* The image used */
+  background-image: url("bg.jpg");
   
-  <input type="submit" value="Submit">
-  <input type="reset" value="Reset">
-  </form>
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
 
+<div class="bg-image"></div>
 
-
-
-
-
+<div class="bg-text">
+  <h2  >Quick Quiz</h2>
+  <h1 style="font-size:50px">Sura && Orieb</h1>
+  <p>made with love </p>
 </div>
-
-   <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-  </body>
+<div>
+  <form action="p0.html"   >
+   
+<a><button id="startButoon" style="color:pink ;background-color: black ;border: nonecolor: #ff6666;padding: 15px 32px; text-align: center;display: inline-block;margin-left:200px; ">Start!</button></a></div>
+</form>
+</body>
 </html>
